@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:tint="#3f51b5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/hot_cold_marker"
+        android:id="@+id/hotColdIcon"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/student_map_clue_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clue"
+            android:textSize="10sp"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/colour_white"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/student_map_team_tracker_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Team Tracker"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/colour_white"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/student_map_logout_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Logout"
+            android:background="@drawable/button_pale_red"
+            android:textColor="@color/colour_white"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

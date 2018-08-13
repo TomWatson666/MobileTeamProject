@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/gem_hunt_logo"
+        android:alpha=".15"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#B5122B">
+
+            <Button
+                android:id="@+id/viewOnlineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/colour_white"
+                android:background="@drawable/button_blue"
+                android:layout_margin="10dp"
+                android:text="View Online" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="android.support.v4.app.ListFragment"
+            class="team5project.treasurehuntapp.QRFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#B5122B">
+
+            <Button
+                android:id="@+id/managementButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/colour_white"
+                android:background="@drawable/button_red"
+                android:layout_margin="10dp"
+                android:text="Management" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/colour_white"
+                android:background="@drawable/button_pale_red"
+                android:layout_margin="10dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="team5project.treasurehuntapp.EditLocation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:maxLength="100"
+                    android:id="@+id/nameField"
+                    android:hint="Name"
+                    android:layout_gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:ems="10"
+                    android:id="@+id/clueField"
+                    android:hint="Clue"
+                    android:layout_gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:id="@+id/save"
+                    android:textColor="@color/colour_white"
+                    android:background="@drawable/button_blue"
+                    android:onClick="OnSave"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:text="Cancel"
+                    android:onClick="OnCancel"
+                    android:background="@drawable/button_red"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colour_white"
+                    android:layout_height="@dimen/button_height"
+                    android:id="@+id/deleteLocation"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CongratulationsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#2d519b"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#2d519b">
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:text="Logout"
+                android:textSize="10dp"
+                android:textColor="@color/colour_white"
+                android:background="@drawable/button_pale_red" />
+
+            <ImageView
+                android:id="@+id/selfieButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/take_selfie"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:fontFamily="serif"
+                android:text="Take Selfie"
+                android:textAlignment="center"
+                android:textColor="@color/colour_white"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/take_selfie_text_view" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/teamText"
+            android:layout_width="333dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="228dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/completed_hunt_text"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <ProgressBar
+            android:id="@+id/congratulations_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/progress_circle"
+            android:secondaryProgress="100"
+            android:max="100"
+            android:progress="50"
+            android:indeterminate="false"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/facebookButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/congratulations_facebook" />
+
+            <ImageView
+                android:id="@+id/saveButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/congratulations_download" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/congratulations_crown"
+            android:layout_alignTop="@+id/congratulations_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team5project.treasurehuntapp.AdminMap">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.adminmap.AdminMap" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:id="@+id/autocomplete_fragment"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/admin_map_team_tracker_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue"
+            android:text="Team Tracker"
+            android:textColor="@color/colour_white"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/admin_map_logout_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_pale_red"
+            android:text="Logout"
+            android:textColor="@color/colour_white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
